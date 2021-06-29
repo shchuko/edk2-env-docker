@@ -32,7 +32,7 @@ RUN mkdir $SOME_EDK_PKG_DIR && chown $USER_NAME:$USER_NAME $SOME_EDK_PKG_DIR
 VOLUME $SOME_EDK_PKG_DIR
 
 ARG EDK_REMOTE="https://github.com/tianocore/edk2.git"
-ARG EDK_BRANCH="master"
+ARG EDK_BRANCH="edk2-stable202105"
 ARG EDK_PATH=$USER_HOME/edk2
 
 RUN git clone --filter=blob:none --single-branch --branch $EDK_BRANCH $EDK_REMOTE $EDK_PATH && \
